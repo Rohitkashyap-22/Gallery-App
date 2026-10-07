@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+#container{
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+#drawer{
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    background-color: rgb(70, 3, 31);
+    height: calc(100vh - 30px);
+    padding: 15px;
+    padding-top: 50px;
+    position:sticky;
+    top: 25px;
+}
+ 
+#drawer div{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(11, 139, 101);
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: black;
+}
+
+#main img{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    padding: 7px;
+}
